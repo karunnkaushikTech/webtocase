@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <title>Web To Case</title>
+</head>
+<body>
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+      method="POST">
+
+  <!-- Salesforce Required -->
+  <input type="hidden" name="orgid" value="00DcZ000004A8QD">
+  <input type="hidden" name="recordType" value="012cZ000001DkSfQAK">
+  <input type="hidden" name="retURL" value="https://www.google.com">
+  <input type="hidden" name="debug" value="1">
+
+  <h3>お問い合わせフォーム</h3>
+
+  AW AirID登録者氏名:<br>
+  <input maxlength="255" name="00NcZ000002XkUO" type="text"><br><br>
+
+  AW 対象の応募ID:<br>
+  <input maxlength="255" name="00NcZ000002XkUQ" type="text"><br><br>
+
+  対象の求人番号 / Feed Reference ID:<br>
+  <input maxlength="255" name="00NcZ000002XkUU" type="text"><br><br>
+
+  AW 対象の広告番号:<br>
+  <input maxlength="255" name="00NcZ000002XkUM" type="text"><br><br>
+
+  AWカテゴリ中:<br>
+  <select name="00NcZ000002XkUW">
+    <option value="">--なし--</option>
+    <option value="Account Administration">アカウント管理</option>
+    <option value="Job Management">求人管理</option>
+    <option value="Candidate Management">応募者・候補者管理</option>
+    <option value="Company Homepage">採用ホームページ</option>
+    <option value="Campaign Management">有料広告管理</option>
+    <option value="Payments / Invoicing">決済・請求</option>
+    <option value="Agency Functions">代理店機能</option>
+    <option value="Account Moderation">アカウント審査</option>
+    <option value="Job Moderation / Visibility">原稿審査・掲載基準</option>
+    <option value="Product Introduction / Onboarding">製品説明・導入支援</option>
+    <option value="System / Other">システム・その他</option>
+  </select><br><br>
+
+  AWカテゴリ小:<br>
+  <select name="00NcZ000002XkUY">
+    <option value="">--なし--</option>
+    <option value="Login Issues">ログインできない</option>
+    <option value="AirID Registration">AirID登録</option>
+    <option value="Users / Access / Permissions">ユーザー管理・権限</option>
+    <option value="Company Info Change">企業情報変更</option>
+    <option value="My Account Settings">マイアカウント設定</option>
+    <option value="Close Account / Delete Data">アカウント削除・退会</option>
+    <option value="Two-Factor Authentication">二段階認証</option>
+    <option value="Other Account Issues">その他アカウント</option>
+    <option value="Post New Job">新規求人作成</option>
+    <option value="Edit Job">求人編集・更新</option>
+    <option value="Publish / Unpublish Job">求人の掲載/非掲載</option>
+    <option value="Job Content Consultation">原稿表記相談</option>
+    <option value="Salary / Minimum Wage">給与・最低賃金</option>
+    <option value="Bulk Operations">一括操作</option>
+    <option value="Delete / Duplicate">削除・複製</option>
+    <option value="Other Job Issues">その他求人</option>
+    <option value="Applicant List / Details">応募者一覧・詳細</option>
+    <option value="Application Status">応募者対応状況</option>
+    <option value="Messaging / Emails">メール送信・通知</option>
+    <option value="Auto Notification Settings">自動通知設定</option>
+    <option value="Approach / Scout">手動アプローチ</option>
+    <option value="Auto Approach">自動通知設定</option>
+    <option value="Candidate Pool">候補者管理</option>
+    <option value="Other Candidate Issues">その他応募者</option>
+    <option value="Settings / Customization">設定・カスタマイズ</option>
+    <option value="Design / Theme">デザイン・テーマ・コンテンツ編集</option>
+    <option value="External Link Settings">外部リンク設定</option>
+    <option value="Other HP Issues">その他HP</option>
+    <option value="Campaign Setup / Consultation">運用相談・設定</option>
+    <option value="Budget Settings / Adjustment">予算設定・調整</option>
+    <option value="Delivery Issues">配信トラブル</option>
+    <option value="Stop / End Campaign">配信停止・終了</option>
+    <option value="Other Advertising Issues">その他広告</option>
+    <option value="Invoice Request">請求書確認・再発行</option>
+    <option value="Update Payment Method">支払い方法変更</option>
+    <option value="Charge Payment Issues">決済エラー</option>
+    <option value="Invoice Amount Mismatch">請求金額の相違</option>
+    <option value="Refund Request">返金依頼</option>
+    <option value="Other Payment Issues">その他請求</option>
+    <option value="Client Linkage">クライアント連携</option>
+    <option value="Account Manager Setup">担当者確認・設定</option>
+    <option value="Client List">クライアント一覧</option>
+    <option value="Agency Application">代理店申請</option>
+    <option value="Other Agency Issues">その他代理店</option>
+    <option value="Review Status Check">審査状況確認</option>
+    <option value="Review Overview / Criteria">審査概要・基準</option>
+    <option value="Feature Restriction">機能制限</option>
+    <option value="Appeal Process">再審査申請</option>
+    <option value="Other Review Issues">その他審査</option>
+    <option value="Job Alert Message">原稿エラーメッセージ</option>
+    <option value="Indeed Posting Rules">Indeed掲載ルール</option>
+    <option value="Not Posted on Indeed">Indeed掲載されない</option>
+    <option value="Free Posting">無料掲載</option>
+    <option value="Other Media Integration">他メディア連携</option>
+    <option value="Search Engine Posting">検索エンジン掲載</option>
+    <option value="Other Visibility Issues">その他掲載</option>
+    <option value="New Implementation">新規導入相談</option>
+    <option value="Feature Explanation">製品説明・導入支援</option>
+    <option value="Other Onboarding">その他導入</option>
+    <option value="Unexpected Behavior / Bug">想定外の挙動・バグ</option>
+    <option value="Terms / Privacy Policy">利用規約・プライバシー</option>
+    <option value="Feature Request">機能改善要望</option>
+    <option value="Phone Support Request">ヘルプデスク改善要望</option>
+    <option value="Thank You Email">サンクスメール</option>
+    <option value="ATS Integration">ATS連携</option>
+    <option value="Account Recovery">アカウント復活</option>
+    <option value="Security Check">セキュリティチェック</option>
+    <option value="Brand Review">ランドレビュー</option>
+    <option value="Other">その他</option>
+  </select><br><br>
+
+  <input type="submit" value="送信">
+
+</form>
+
+</body>
+</html>
